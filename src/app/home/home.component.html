@@ -1,0 +1,89 @@
+<app-header></app-header>
+<div style="background: #273746; width: 100%; height: 100%">
+  <div class="road-map">
+    <img src="../assets/paris-3.png" alt="Carte route" />
+  </div>
+  <div class="bloc-box">
+    <div class="bloc-column">
+      <div>
+        <div class="bloc-one">
+          <img src="../assets/cL.svg" alt="logo" height="270px" width="270px" />
+          <div
+            style="
+              font-size: 30px;
+              margin-bottom: 40px;
+              color: white;
+              z-index: 4;
+            "
+          >
+            <strong>Clémence De Clercq</strong>
+          </div>
+          <div style="font-size: 20px; margin-bottom: 40px; color: white">
+            Développeuse web SIG
+          </div>
+          <button mat-button style="background-color: white">
+            Télécharger mon CV
+          </button>
+          <div style="display: flex; flex-direction: row; margin-top: 10px">
+            <img
+              src="../assets/github-mark-white.svg"
+              alt="logo"
+              height="30px"
+              width="30px"
+              style="margin-top: 5px; margin-right: 10px"
+            />
+            <img
+              src="../assets/logo-linkedin.svg"
+              alt="logo"
+              height="40px"
+              width="40px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bloc-two">
+        <div class="mad-card-content">
+          <mat-card class="card">
+            <pre>
+          <span class="font-bold">1</span>  class <strong style="color: #FFC536;">Person</strong> &#123;
+        </pre>
+            <pre>
+          <span class="font-bold">2</span>    constructor () &#123;
+        </pre>
+            <pre>
+          <span class="font-bold">3</span>      this.name=<strong style="color: #FFC536;">"Clémence De Clercq"</strong>;
+        </pre>
+            <pre>
+          <span class="font-bold">4</span>      this.status=<strong style="color: #FFC536;">"Développeuse web SIG"</strong>;
+        </pre>
+            <pre>
+          <span class="font-bold">5</span>      this.localisation=<strong style="color: #FFC536;">"France"</strong>;
+        </pre>
+            <pre>
+          <span class="font-bold">6</span>      this.traits=["<strong style="color: #FFC536;">DEV</strong>,"<strong style="color: #FFC536;">SIG</strong>,"<strong style="color: #FFC536;">DATA</strong>];
+        </pre>
+            <pre>
+          <span class="font-bold">7</span>   &#125;
+        </pre>
+            <pre>
+          <span class="font-bold">8</span>  &#125;
+        </pre>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+    <div
+      style="height: 10%; width: 100%; display: flex; justify-content: center"
+    >
+      <div>
+        <button
+          mat-mini-fab
+          [@buttonAnimation]="state"
+          style="background-color: #ffc536; z-index: 5"
+        >
+          <mat-icon>keyboard_arrow_down</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

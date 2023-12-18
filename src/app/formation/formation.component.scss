@@ -1,0 +1,19 @@
+#map {
+  height: 400px;
+}
+.content-map {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffc536;
+  justify-content: center;
+  width: auto;
+}
+@media screen and (max-width: 600px) {
+  #map {
+    width: 350px;
+  }
+  .content-map {
+    display: flex;
+    flex-direction: column;
+  }
+}

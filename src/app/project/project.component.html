@@ -1,0 +1,59 @@
+<div style="background: #273746; width: 100%; height: auto">
+  <div
+    style="
+      background-color: #273746;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    "
+  >
+    <div
+      style="
+        background-color: #273746;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 45px;
+        padding-bottom: 45px;
+      "
+    >
+      <div style="font-size: 25px; color: white">Mes projets</div>
+    </div>
+    <div style="background-color: #273746; justify-content: center">
+      <div class="content-section implementation carousel-demo">
+        <div
+          class="card"
+          style="background-color: #3c4b58; padding-top: 30px; z-index: 4"
+        >
+          <p-carousel
+            [value]="images"
+            styleClass="custom-carousel"
+            [numVisible]="3"
+            [numScroll]="1"
+            [circular]="true"
+            [autoplayInterval]="0"
+            [responsiveOptions]="responsiveOptions"
+          >
+            <ng-template let-image pTemplate="item">
+              <div class="item card">
+                <img src="{{ image.picture }}" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">{{ image.random }}</h5>
+                  <p class="card-text">
+                    {{ image.description }}
+                  </p>
+                  <a href="{{ image.site }}" class="btn btn-primary"
+                    >En savoir plus</a
+                  >
+                </div>
+              </div>
+            </ng-template>
+          </p-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

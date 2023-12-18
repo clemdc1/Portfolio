@@ -1,0 +1,60 @@
+<div style="background: #273746; width: 100%; height: auto">
+  <div
+    style="
+      background-color: #273746;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    "
+  >
+    <div
+      style="
+        background-color: #273746;
+        width: 100%;
+        height: auto;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      "
+    >
+      <div style="font-size: 25px; color: white">Formation</div>
+    </div>
+    <div class="content-map">
+      <div
+        style="background-color: red; width: 50%; height: auto; margin: 10px"
+      >
+        <div id="map" style="z-index: 10"></div>
+      </div>
+      <div style="background-color: #ffc536; margin: 10px">
+        <div
+          *ngIf="schoolToSee"
+          style="display: flex; flex-direction: column; align-items: center"
+        >
+          <div>
+            <img
+              src="{{ schoolToSee.icone }}"
+              style="width: 150px; height: 70px; margin-top: 20px"
+            />
+          </div>
+          <div style="margin-top: 30px">
+            <strong>{{ schoolToSee.titre }}</strong>
+          </div>
+          <div
+            *ngFor="let diplome of schoolToSee.diplome"
+            style="margin-top: 30px; padding-left: 10px; padding-right: 10px"
+          >
+            {{ diplome.name }}
+          </div>
+          <div
+            style="margin-top: 30px; padding-left: 10px; padding-right: 10px"
+          >
+            <button mat-raised-button>Télécharger mon diplôme</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

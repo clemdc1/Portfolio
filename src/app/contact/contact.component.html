@@ -1,0 +1,93 @@
+<div style="width: 100%; height: auto">
+  <div
+    style="
+      background: #273746;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      padding-top: 45px;
+      padding-bottom: 45px;
+      font-size: 25px;
+      color: white;
+    "
+  >
+    Contact
+  </div>
+  <div
+    style="
+      background: #273746;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    "
+  >
+    <form
+      [formGroup]="messageForm"
+      (ngSubmit)="onSubmit($event)"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      "
+    >
+      <div class="profile">
+        <div>
+          <mat-form-field class="entry">
+            <mat-label for="from_first_name">Prénom: </mat-label>
+            <input
+              matInput
+              id="from_first_name"
+              type="text"
+              formControlName="from_first_name"
+              name="from_first_name"
+            />
+          </mat-form-field>
+        </div>
+        <div class="last-name">
+          <mat-form-field class="entry">
+            <mat-label for="from_last_name">Nom: </mat-label>
+            <input
+              matInput
+              id="from_last_name"
+              type="text"
+              formControlName="from_last_name"
+              name="from_last_name"
+            />
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="message">
+        <mat-form-field class="entry">
+          <mat-label for="from_email">Email: </mat-label>
+          <input
+            matInput
+            id="from_email"
+            type="text"
+            formControlName="from_email"
+            name="from_email"
+          />
+        </mat-form-field>
+      </div>
+      <div class="message">
+        <mat-form-field class="entry">
+          <label for="message">Message: </label>
+          <textarea
+            matInput
+            id="message"
+            type="text"
+            formControlName="message"
+            name="message"
+          ></textarea>
+        </mat-form-field>
+      </div>
+      <button mat-raised-button type="submit" style="z-index: 12">
+        Envoyer
+      </button>
+    </form>
+  </div>
+</div>

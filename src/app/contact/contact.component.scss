@@ -1,0 +1,37 @@
+.profile {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 12;
+}
+.entry {
+  width: 100%;
+  z-index: 12;
+}
+.last-name {
+  margin-left: 50px;
+}
+
+.message {
+  z-index: 12;
+  width: 100%;
+  display: contents;
+}
+
+@media screen and (max-width: 600px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+  }
+  .entry {
+    width: 350px;
+    display: block;
+    margin-left: 0px;
+    align-items: center;
+  }
+  .last-name {
+    margin-left: 0px;
+  }
+}
