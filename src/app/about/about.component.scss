@@ -9,6 +9,13 @@
   height: 100%;
   inset: 50px;
 }
+.title-about {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-top: 80px;
+  font-size: 25px;
+}
 .description {
   display: flex;
   flex-direction: row;
@@ -22,7 +29,15 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
-@media screen and (max-width: 600px) {
+
+.text-hobbies {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 832px) {
+  .title-about {
+    padding-top: 80px;
+  }
   .description {
     flex-direction: column;
     justify-content: flex-start;
@@ -30,7 +45,10 @@
   }
   .boxes {
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  }
+  .text-hobbies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }

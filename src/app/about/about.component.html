@@ -11,17 +11,7 @@
       justify-content: space-between;
     "
   >
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        color: white;
-        margin-top: 110px;
-        font-size: 25px;
-      "
-    >
-      À propos de moi
-    </div>
+    <div class="title-about">À propos de moi</div>
     <div class="description">
       <div>
         <img
@@ -39,28 +29,27 @@
             background-color: #525f6b;
             font-size: 16px;
             line-height: 1.5em;
+            max-width: 848px;
+            text-align: justify;
           "
         >
           <mat-card-content>
             <p>
               Je m'appelle <strong>Clémence De Clercq</strong> , et je suis
               actuellement Développeuse web SIG au
-              <strong> Museum National <br />d'Histoire Naturelle </strong> .
+              <strong> Museum National d'Histoire Naturelle </strong> .
             </p>
             <p>
               Ma passion pour la géoinformatique a débuté en 2019. Après des
-              études en environnement,<br />
-              j'ai souhaité compléter mes connaissances avec une maîtrise en
-              géomatique. Ceci<br />
-              m'a permis une meilleure compréhension des données
-              environnementales et de leurs portées.
+              études en environnement, j'ai souhaité compléter mes connaissances
+              avec une maîtrise en géomatique. Ceci m'a permis une meilleure
+              compréhension des données environnementales et de leurs portées.
             </p>
             <p>
               Dans le souhait de pouvoir vulgariser l'information et de la
-              valoriser, des notions en <br />développement web m'étaient
-              nécessaires. Je me suis alors formée en autodidacte afin de me
-              spécialiser<br />
-              en conception d'applications SIG
+              valoriser, des notions en développement web m'étaient nécessaires.
+              Je me suis alors formée en autodidacte afin de me spécialiser en
+              conception d'applications SIG
             </p>
           </mat-card-content>
         </mat-card>
@@ -79,21 +68,27 @@
             margin: 20px;
             background-color: #3c4b58;
             color: white;
-            width: auto;
+            width: 100%;
+            justify-content: center;
+            font-size: 16px;
           "
         >
           <mat-card-header
-            style="padding-bottom: 16px; display: flex; justify-content: center"
+            style="padding-bottom: 18px; display: flex; justify-content: center"
           >
             <mat-card-title>Mes passions</mat-card-title>
           </mat-card-header>
           <mat-card-content>
-            <p>
-              <li>Piloter des ULM multiaxe</li>
-              <li>Faire de la plongée</li>
-              <li>Les échecs</li>
-              <li>Voyager</li>
-            </p>
+            <div class="text-hobbies">
+              <div>
+                <li>Piloter des ULM multiaxe</li>
+                <li>Faire de la plongée</li>
+              </div>
+              <div>
+                <li>Les échecs</li>
+                <li>Voyager</li>
+              </div>
+            </div>
           </mat-card-content>
         </mat-card>
       </div>
