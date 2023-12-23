@@ -41,7 +41,7 @@ export class ProjectComponent implements OnInit {
       },
       {
         random: 'Carto-Bruit',
-        picture: '../assets/carte-bruit.png',
+        picture: '../assets/cartobruit2.png',
         description:
           'Carto-Bruit est une application web de diffusion et visualisation 2D et 3D de données acoustiques.',
         site: 'carto-bruit',
