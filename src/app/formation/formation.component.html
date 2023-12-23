@@ -1,57 +1,28 @@
-<div style="background: #273746; width: 100%; height: auto">
-  <div
-    style="
-      background-color: #273746;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    "
-  >
-    <div
-      style="
-        background-color: #273746;
-        width: 100%;
-        height: auto;
-        padding-top: 45px;
-        padding-bottom: 45px;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      "
-    >
-      <div style="font-size: 25px; color: white">Formation</div>
-    </div>
+<div class="composant-2-size">
+  <div class="composant-formation">
+    <div class="title-formation">Formation</div>
     <div class="content-map">
-      <div
-        style="background-color: red; width: 50%; height: auto; margin: 10px"
-      >
-        <div id="map" style="z-index: 10"></div>
+      <div class="map-boxe">
+        <div id="map" class="first-place"></div>
       </div>
-      <div style="background-color: #ffc536; margin: 10px">
-        <div
-          *ngIf="schoolToSee"
-          style="display: flex; flex-direction: column; align-items: center"
-        >
+      <div class="barre-laterale">
+        <div *ngIf="schoolToSee" class="content-right-lateral-bar">
           <div>
-            <img
-              src="{{ schoolToSee.icone }}"
-              style="width: 150px; height: 70px; margin-top: 20px"
-            />
+            <img src="{{ schoolToSee.icone }}" class="icone-university" />
           </div>
-          <div style="margin-top: 30px">
+          <div class="university-title">
             <strong>{{ schoolToSee.titre }}</strong>
           </div>
           <div
             *ngFor="let diplome of schoolToSee.diplome"
-            style="margin-top: 30px; padding-left: 10px; padding-right: 10px"
+            class="university-description"
           >
             {{ diplome.name }}
           </div>
-          <div
-            style="margin-top: 30px; padding-left: 10px; padding-right: 10px"
-          >
-            <button mat-raised-button>Télécharger mon diplôme</button>
+          <div class="university-description">
+            <button mat-raised-button (click)="downloadPdf(schoolToSee.id)">
+              Télécharger mon diplôme
+            </button>
           </div>
         </div>
       </div>

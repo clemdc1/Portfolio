@@ -1,3 +1,29 @@
+.title-contact {
+  background: #273746;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  font-size: 25px;
+  color: white;
+}
+.contact-content {
+  background: #273746;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 .profile {
   width: 100%;
   display: flex;

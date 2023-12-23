@@ -9,6 +9,13 @@
   height: 100%;
   inset: 50px;
 }
+.boxes-about-1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  justify-content: space-between;
+}
 .title-about {
   display: flex;
   justify-content: center;
@@ -24,15 +31,71 @@
   align-items: center;
   margin-top: 60px;
 }
+.avatar {
+  background-color: #273746;
+  border-radius: 50% 50% 50% 50%;
+}
+.mat-card-description {
+  margin: 20px;
+  background-color: #525f6b;
+  font-size: 16px;
+  line-height: 1.5em;
+  max-width: 848px;
+  text-align: justify;
+}
 .boxes {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-
+.boxe-passion {
+  display: flex;
+  flex-direction: row;
+}
+.boxe-passion-content {
+  margin: 20px;
+  background-color: #3c4b58;
+  color: white;
+  width: 100%;
+  justify-content: center;
+  font-size: 16px;
+}
+.boxe-passion-header {
+  padding-bottom: 18px;
+  display: flex;
+  justify-content: center;
+}
 .text-hobbies {
   display: flex;
   flex-direction: column;
+}
+.mat-card-competences {
+  margin: 20px;
+  background-color: #3c4b58;
+  color: white;
+}
+.mat-card-competences-header {
+  padding-bottom: 16px;
+}
+.boxes-competences {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.boxes-1-competences {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  z-index: 4;
+}
+.boxes-2-competences {
+  display: flex;
+  justify-content: space-between;
+  z-index: 4;
+}
+.boxes-3-competences {
+  display: flex;
+  justify-content: space-around;
 }
 @media screen and (max-width: 832px) {
   .title-about {

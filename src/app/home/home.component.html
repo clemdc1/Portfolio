@@ -1,5 +1,5 @@
 <div class="content-home">
-  <div class="road-map">
+  <div class="image-paris">
     <img src="../assets/paris-3.png" alt="Carte route" />
   </div>
   <div class="bloc-box">
@@ -7,23 +7,14 @@
       <div>
         <div class="bloc-one">
           <img src="../assets/cL.svg" alt="logo" height="270px" width="270px" />
-          <div
-            style="
-              font-size: 30px;
-              margin-bottom: 40px;
-              color: white;
-              z-index: 4;
-            "
-          >
+          <div class="name">
             <strong>Clémence De Clercq</strong>
           </div>
-          <div style="font-size: 20px; margin-bottom: 40px; color: white">
-            Développeuse web SIG
-          </div>
-          <button mat-button style="background-color: white">
+          <div class="job">Développeuse web SIG</div>
+          <button mat-button class="button-csv" (click)="downloadCV()">
             Télécharger mon CV
           </button>
-          <div style="display: flex; flex-direction: row; margin-top: 10px">
+          <div class="social-media">
             <a href="https://github.com/clemdc1" target="_blank">
               <img
                 src="../assets/github-mark-white.svg"
@@ -51,22 +42,22 @@
         <div class="mad-card-content">
           <mat-card class="card">
             <pre>
-          <span class="font-bold">1</span>  class <strong style="color: #FFC536;">Person</strong> &#123;
+          <span class="font-bold">1</span>  class <strong class="jaune">Person</strong> &#123;
         </pre>
             <pre>
           <span class="font-bold">2</span>    constructor () &#123;
         </pre>
             <pre>
-          <span class="font-bold">3</span>      this.name=<strong style="color: #FFC536;">"Clémence De Clercq"</strong>;
+          <span class="font-bold">3</span>      this.name=<strong class="jaune">"Clémence De Clercq"</strong>;
         </pre>
             <pre>
-          <span class="font-bold">4</span>      this.status=<strong style="color: #FFC536;">"Développeuse web SIG"</strong>;
+          <span class="font-bold">4</span>      this.status=<strong class="jaune">"Développeuse web SIG"</strong>;
         </pre>
             <pre>
-          <span class="font-bold">5</span>      this.localisation=<strong style="color: #FFC536;">"France"</strong>;
+          <span class="font-bold">5</span>      this.localisation=<strong class="jaune">"France"</strong>;
         </pre>
             <pre>
-          <span class="font-bold">6</span>      this.traits=["<strong style="color: #FFC536;">DEV</strong>,"<strong style="color: #FFC536;">SIG</strong>,"<strong style="color: #FFC536;">DATA</strong>];
+          <span class="font-bold">6</span>      this.traits=[<strong class="jaune">"DEV"</strong>,<strong style="color: #FFC536;">"SIG"</strong>,<strong style="color: #FFC536;">"DATA"</strong>];
         </pre>
             <pre>
           <span class="font-bold">7</span>   &#125;
@@ -76,26 +67,6 @@
         </pre>
           </mat-card>
         </div>
-      </div>
-    </div>
-    <div
-      style="
-        height: auto;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
-      "
-    >
-      <div>
-        <button
-          mat-mini-fab
-          [@buttonAnimation]="state"
-          style="background-color: #ffc536; z-index: 5"
-        >
-          <mat-icon>keyboard_arrow_down</mat-icon>
-        </button>
       </div>
     </div>
   </div>

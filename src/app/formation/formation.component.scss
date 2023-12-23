@@ -1,5 +1,26 @@
-#map {
-  height: 400px;
+.composant-formation {
+  background-color: #273746;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.title-formation {
+  background-color: #273746;
+  width: 100%;
+  height: auto;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+}
+.map-boxe {
+  width: 50%;
+  height: auto;
+  margin: 10px;
 }
 .content-map {
   display: flex;
@@ -7,6 +28,31 @@
   background-color: #ffc536;
   justify-content: center;
   width: auto;
+}
+#map {
+  height: 400px;
+}
+.barre-laterale {
+  background-color: #ffc536;
+  margin: 10px;
+}
+.content-right-lateral-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icone-university {
+  width: 150px;
+  height: 70px;
+  margin-top: 20px;
+}
+.university-title {
+  margin-top: 30px;
+}
+.university-description {
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media screen and (max-width: 600px) {
   #map {

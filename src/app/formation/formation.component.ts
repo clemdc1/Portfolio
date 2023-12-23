@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import * as L from 'leaflet';
 
@@ -25,8 +26,8 @@ export class FormationComponent implements OnInit {
       titre: 'Université Laval',
       icone: '../assets/ulaval.png',
       diplome: [
-        { name: "Maitrise en Biogeoscience de l'environnement" },
-        { name: 'Maîtrise en sciences géomatique' },
+        { name: "Maîtrise en Biogeosciences de l'environnement" },
+        { name: 'Maîtrise en sciences géomatique - géomatique appliquée' },
       ],
       download: '',
     },
@@ -37,6 +38,8 @@ export class FormationComponent implements OnInit {
     '<img style="width:50px;height:30px;" src="../assets/logo-unil_page-0001.jpg" /> <div>Université de Lausanne</div>';
   popupLavalContent =
     '<img style="width:60px;height:30px;" src="../assets/ulaval.png" /> <div>Université Laval</div>';
+  pdfUrl!: string;
+  constructor(private http: HttpClient) {}
   ngOnInit(): void {
     this.schoolToSee = this.scolarite[0];
 
@@ -90,5 +93,44 @@ export class FormationComponent implements OnInit {
     } else {
       this.schoolToSee = this.scolarite[1];
     }
+  }
+
+  // Fonction pour télécharger le fichier PDF
+  downloadPdf(id: string) {
+    // Spécifiez l'URL du fichier PDF à télécharger
+    if (id === '1') {
+      this.pdfUrl = 'assets/bachelor_suisse.pdf';
+    } else {
+      this.pdfUrl = 'assets/maitrise_biogeo.pdf';
+    }
+
+    // Utilisez HttpClient pour télécharger le fichier
+    this.http
+      .get(this.pdfUrl, { responseType: 'arraybuffer' })
+      .subscribe((data: ArrayBuffer) => {
+        // Créez un blob à partir des données
+        const blob = new Blob([data], { type: 'application/pdf' });
+
+        // Créez un objet URL pour le blob
+        const url = window.URL.createObjectURL(blob);
+
+        // Créez un lien invisible dans le DOM
+        const a = document.createElement('a');
+        a.href = url;
+
+        if (id === '1') {
+          a.download = 'bachelor_suisse_CDC.pdf';
+        } else {
+          a.download = 'maitrises_CDC.pdf';
+        }
+
+        // Ajoutez le lien au DOM et déclenchez le téléchargement
+        document.body.appendChild(a);
+        a.click();
+
+        // Libérez l'objet URL et supprimez le lien du DOM
+        window.URL.revokeObjectURL(url);
+        document.body.removeChild(a);
+      });
   }
 }

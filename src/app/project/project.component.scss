@@ -1,0 +1,30 @@
+.composant-project {
+  background-color: #273746;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.title-part {
+  background-color: #273746;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.title {
+  font-size: 25px;
+  color: white;
+}
+.project-description-part {
+  background-color: #273746;
+  justify-content: center;
+}
+.card-project {
+  background-color: #3c4b58;
+  padding-top: 30px;
+  z-index: 4;
+}
