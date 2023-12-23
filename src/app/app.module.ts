@@ -22,6 +22,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogecomapComponent } from './project/dialogecomap/dialogecomap.component';
+import { DialogcartobruitComponent } from './project/dialogcartobruit/dialogcartobruit.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormationComponent,
     ContactComponent,
     FooterComponent,
+    DialogecomapComponent,
+    DialogcartobruitComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +53,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatFormFieldModule,
     MatInputModule,
     HttpClientModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

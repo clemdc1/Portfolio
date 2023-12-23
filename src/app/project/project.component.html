@@ -23,7 +23,9 @@
                   <p class="card-text">
                     {{ image.description }}
                   </p>
-                  <a href="{{ image.site }}" class="btn btn-primary"
+                  <a
+                    (click)="openDescribePage(image.site)"
+                    class="btn btn-primary"
                     >En savoir plus</a
                   >
                 </div>
