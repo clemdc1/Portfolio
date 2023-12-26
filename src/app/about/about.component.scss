@@ -14,7 +14,7 @@
   flex-direction: column;
   position: relative;
   height: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .title-about {
   display: flex;
@@ -34,6 +34,8 @@
 .avatar {
   background-color: #273746;
   border-radius: 50% 50% 50% 50%;
+  height: 280px;
+  width: 280px;
 }
 .mat-card-description {
   margin: 20px;
@@ -114,5 +116,21 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+}
+@media screen and (min-width: 2300px) {
+  .avatar {
+    background-color: #273746;
+    border-radius: 50% 50% 50% 50%;
+    height: 380px;
+    width: 380px;
+  }
+  .mat-card-description {
+    margin: 20px;
+    background-color: #525f6b;
+    font-size: 16px;
+    line-height: 1.5em;
+    max-width: 1000px;
+    text-align: justify;
   }
 }

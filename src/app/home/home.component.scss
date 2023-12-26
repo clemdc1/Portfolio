@@ -6,7 +6,7 @@
 .image-paris {
   display: flex;
   width: 100%;
-  height: auto;
+  height: 100%;
   flex-direction: row-reverse;
   position: absolute;
 }
@@ -117,5 +117,21 @@
   }
   .bloc-two {
     margin-left: 180px;
+  }
+}
+@media screen and (min-width: 2300px) {
+  .bloc-two {
+    margin-left: 400px;
+  }
+  .mad-card-content {
+    margin-top: 25%;
+  }
+  .card {
+    display: flex;
+    width: 550px;
+    height: auto;
+    background-color: #181814;
+    padding-left: 60px;
+    font-size: 15px;
   }
 }

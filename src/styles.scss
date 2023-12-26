@@ -14,7 +14,7 @@ body {
 .composant-size {
   background: #273746;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .composant-2-size {
   width: 100%;
@@ -22,4 +22,11 @@ body {
 }
 .first-place {
   z-index: 12;
+}
+@media screen and (max-width: 832px) {
+  .composant-size {
+    background: #273746;
+    width: 100%;
+    height: auto;
+  }
 }

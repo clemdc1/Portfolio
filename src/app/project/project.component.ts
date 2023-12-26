@@ -27,7 +27,7 @@ export class ProjectComponent implements OnInit {
     this.images = [
       {
         random: 'CarHab',
-        picture: '../assets/carhab.png',
+        picture: '../assets/carhab4.png',
         description:
           'CarHab est un programme national de modélisation cartographique des habitats naturels et semi-naturels de France',
         site: 'carhab',
