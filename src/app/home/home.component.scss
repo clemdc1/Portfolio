@@ -90,6 +90,13 @@
     width: 100%;
     height: auto;
   }
+  .image-paris {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row-reverse;
+    position: absolute;
+  }
   .bloc-box {
     flex-direction: column;
     justify-content: flex-start;
